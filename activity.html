@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domcument</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-transform:uppercase ;
+        }
+        .parent{
+            height: 100vh;
+            background-color: #e3e3;
+        }
+        .chlid{
+            height: 250px;
+            width: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #e3e3e3;
+            border: 2px solid pink;
+            font-size: 20 px;
+        }
+        .div1{
+            background-color: red;
+            position: relative;
+            left: 50px;
+            
+        }
+        .div2{
+            background-color: purple;
+            position: absolute;
+            right: 50px;
+        }
+        .div3{
+            background-color: aqua;
+            position: fixed;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="chlid div1">div1</div>
+        <div class="chlid div2">div2</div>
+        <div class="chlid div3">div3</div>
+    </div>
+</body>
+</html>
