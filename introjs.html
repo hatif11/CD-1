@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-color: antiquewhite;
+      color: rgb(131, 129, 129);
+    }
+    div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <fieldset >
+      <legend><h1 style="  padding: 0px 100px 0px 100px;">Enter the numbers Remainder</h1></legend>
+        Num 1 <input style=" color: rgb(1, 75, 75); background-color: rgb(255, 250, 204); border-radius: 6px; height: 30px; " id = "num1" type = "number" placeholder="Enter number here" > <br><br>
+        Num 2 <input style=" color: rgb(1, 75, 75); background-color: rgb(255, 250, 204); border-radius: 6px; height: 30px;" id = "num2" type = "number" placeholder="Enter number here"><br><br>
+          <h3 id="result"></h3>
+          <button style=" color:whitesmoke ; height: 25px; width: 100px; border-radius: 20px; cursor: pointer;  background-color: green ; border: 2px solid rgba(14, 114, 97, 0.616);" onclick="change()"> Submit</button>
+        </fieldset>
+
+  </div>
+  
+        
+  <script>
+          function change (){
+          let num1 = document.getElementById("num1").value;
+          let num2 = document.getElementById("num2").value;
+          let remainder = num1 % num2
+          document.getElementById("result").innerHTML= "The Remainder of " + num1 + " and " + num2 + " is: " + remainder;
+
+}
+  </script>
+
+</body>
+
+</html>
