@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const fruit = ["apple", "mango", "banana", "etc"];
+        console.log(fruit);
+
+        fruit.push("stawberry");
+        console.log(fruit);
+
+        fruit.pop();
+        console.log(fruit);
+
+        fruit.shift();
+        console.log(fruit);
+
+        fruit.unshift("strawberry")
+        console.log(fruit);
+
+        var call = Math.floor(Math.random() * 100) + 1;
+        console.log(call);
+
+        function stack() { console.log("this is call stak function") }
+
+        function stak() {
+            stack();
+            console.log("this is call stavck function")
+        }
+
+        stak();
+
+    </script>
+</body>
+
+</html>
